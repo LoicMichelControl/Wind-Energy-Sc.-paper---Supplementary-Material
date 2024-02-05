@@ -33,6 +33,11 @@
     
     cd Results/
 
+    % Create the 'plot_signal_with_segment' directroy if it not exists
+    if ( exist( 'plot_signal_with_segment' ) == 0)
+        mkdir plot_signal_with_segment
+    end
+    
     delete *.png
 
     cd plot_signal_with_segment/
